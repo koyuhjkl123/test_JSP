@@ -1,0 +1,7 @@
+package com.keduit;
+
+import javax.servlet.http.HttpServlet;
+
+public class uploadServlet extends HttpServlet {
+
+}

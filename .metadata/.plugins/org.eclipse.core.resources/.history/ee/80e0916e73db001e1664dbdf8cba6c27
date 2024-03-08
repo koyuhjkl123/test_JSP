@@ -1,0 +1,17 @@
+package com.keduit.dto;
+
+import oracle.sql.DATE;
+
+public class EmployeeVO {
+	
+	
+	private String userid;
+	private String pass;
+	private String name;
+	private char lev;
+	private DATE enter;
+	private char gender;
+	private String phone;
+	
+
+}

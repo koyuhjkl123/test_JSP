@@ -1,0 +1,39 @@
+package com.keduit.controller.action;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.keduit.dao.EmployeeDAO;
+import com.keduit.dto.EmployeeVO;
+
+public class EmployeeUpdateAction implements Action {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		String url = "/employee/employee_List.jsp";
+		
+		String userid = request.getParameter("userid");
+		
+		
+		EmployeeDAO eDAO = EmployeeDAO.getInstance();
+		
+		EmployeeVO bvo = new EmployeeVO();
+		
+		
+		bvo.setUserid(request.getParameter("userid"));
+		bvo.setPass(request.getParameter("pass"));
+		bvo.setName(request.getParameter("name"));
+		bvo.setLev(request.getParameter("lev"));
+		bvo.setGender(request.getParameter("gender"));
+		bvo.setPhone(request.getParameter("phone"));
+		
+		eDAO.employeeUpdate(bvo);
+
+	}
+
+}

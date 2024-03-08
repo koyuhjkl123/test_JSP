@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>정보 등록</title>
+</head>
+<body>
+
+
+	<div id="container">
+
+		<form action="EmployeeServlet" name="frm" method="post">
+		
+		<input type="hidden" name="command" value="employee_create">
+		
+		
+		<table>
+		
+		<tr>
+		<th>아이디</th>
+		<td><input type="text" name="userid" required></td>
+		</tr>
+		
+		<tr>
+		<th>비밀번호</th>
+		<td><input type="password" name="pass" required></td>
+		</tr>
+		
+		<tr>
+		<th>이름</th>
+		<td><input type="text" name="name" required></td>
+		</tr>
+		
+		<tr>
+		<th>권한</th>
+		<td><select>
+		<option>운영자</option>
+		<option>일반회원</option>
+		</select></td>
+		</tr>
+		
+		<tr>
+		<th>아이디</th>
+		<td><input type="text" name="userid" required></td>
+		</tr>
+		
+		<tr>
+		<th>아이디</th>
+		<td><input type="text" name="userid" required></td>
+		</tr>
+		
+		<tr>
+		<th>아이디</th>
+		<td><input type="text" name="userid" required></td>
+		</tr>
+		
+		
+		</table>
+		</form>
+
+
+	</div>
+
+</body>
+</html>
